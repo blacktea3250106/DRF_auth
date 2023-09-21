@@ -5,6 +5,7 @@ This documentation covers the API endpoints for user authentication, which inclu
 
 ## 1. User Data Retrieval: get_user_data
 <img src="screenshots/user.gif" width="960" height="480">
+
 - Endpoint: /api/get_user_data/
 - HTTP Method: GET
 - Description: Retrieves the information of the authenticated user.
