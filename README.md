@@ -82,8 +82,6 @@ def login_api(request):
     serializer.is_valid(raise_exception=True)
     user = serializer.validated_data['user']
     token, _ = Token.objects.get_or_create(user=user)
-    # token = Token.objects.create(user=user)
-
 
     user_data = {
         'user_info':{
