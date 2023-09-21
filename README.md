@@ -109,6 +109,9 @@ def login_api(request):
 ```python
 @api_view(['POST'])
 @permission_classes([IsAuthenticated])
+def logout_api(request):
+    request.auth.delete() 
+    return Response(status=status.HTTP_200_OK)
 ```
 
 ## Import Statements
