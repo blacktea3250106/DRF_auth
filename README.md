@@ -111,7 +111,17 @@ def login_api(request):
 ```python
 @api_view(['POST'])
 @permission_classes([IsAuthenticated])
-def logout_api(request):
-    request.auth.delete() 
-    return Response(status=status.HTTP_200_OK)
+```
+
+## Import Statements
+These functions utilize several import statements from Django Rest Framework, which include decorators, response handling, status codes, authentication models, and serializers.
+
+```python
+from rest_framework import status
+from rest_framework.decorators import api_view, permission_classes
+from rest_framework.response import Response
+from rest_framework.authtoken.models import Token
+from users.serializers import RegisterSerializers
+from rest_framework.permissions import IsAuthenticated
+from rest_framework.authtoken.serializers import AuthTokenSerializer
 ```
