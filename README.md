@@ -5,7 +5,7 @@ This documentation covers the API endpoints for user authentication, which inclu
 
 ## 1. User Data Retrieval: get_user_data
 
-<img src="screenshots/user.gif" width="960" height="480">
+<img src="screenshots/user.gif" width="1000" height="500">
 
 - Endpoint: http://127.0.0.1:8000/api/user/
 - HTTP Method: GET
